@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Pgm11_S2Nos.package-info.java&apos; to &apos;Pgm11_S2Nos.java&apos;&#x0A;- Original project: &apos;Pgm11_S2Nos&apos;&#x0A;- Original element: &apos;Pgm11_S2Nos.package-info.java&apos;&#x0A;- Renamed element: &apos;Pgm11_S2Nos.Pgm11_S2Nos.java&apos;" description="Rename compilation unit &apos;package-info.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Pgm11_S2Nos{package-info.java" name="Pgm11_S2Nos.java" references="false" stamp="1719222508417" version="1.0"/>
+</session>

@@ -1,0 +1,1612 @@
+!SESSION 2024-06-20 17:30:12.294 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring -data /Users/anand/Documents/Linsoft
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-20 17:30:15.470
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-20 17:30:17.288
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2024-06-20 17:31:05.475
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): <project root> [in S2Nos] is not on its project's build path
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:616)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.filtersSet(ClasspathModifier.java:631)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.DialogPackageExplorer$PackageLabelProvider.getForeground(DialogPackageExplorer.java:210)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getForeground(DelegatingStyledCellLabelProvider.java:143)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getForeground(DecoratingStyledCellLabelProvider.java:145)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:126)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:134)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:149)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:973)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:131)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1046)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:426)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2111)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:867)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:845)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:792)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1610)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:782)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1595)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1392)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:367)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1353)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1589)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:282)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1636)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.DialogPackageExplorer.setInput(DialogPackageExplorer.java:424)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.NewSourceContainerWorkbookPage.doUpdateUI(NewSourceContainerWorkbookPage.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1036)
+	at org.eclipse.jdt.internal.ui.wizards.NewElementWizard.performFinish(NewElementWizard.java:133)
+	at org.eclipse.jdt.internal.ui.wizards.JavaProjectWizard.performFinish(JavaProjectWizard.java:84)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:837)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:474)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2024-06-20 17:31:05.476
+!MESSAGE <project root> [in S2Nos] is not on its project's build path
+!SESSION 2024-06-20 17:33:24.872 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring -data /Users/anand/Documents/Linsoft
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-20 17:33:27.472
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-20 17:33:29.221
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-20 17:36:15.573 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring -data /Users/anand/Documents/Linsoft
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-20 17:36:18.113
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-20 17:36:19.532
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-21 17:17:40.689 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-21 17:17:46.387
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-21 17:17:48.561
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-23 23:23:56.276 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-23 23:23:59.172
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-23 23:24:00.869
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-23 23:32:54.122 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-23 23:32:58.161
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-23 23:33:00.534
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-24 00:08:07.705 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-24 00:08:10.593
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-24 00:08:12.469
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-24 15:00:44.280 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-24 15:00:47.995
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-24 15:00:49.960
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-24 18:14:41.433 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-24 18:14:43.925
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-24 18:14:45.618
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-27 17:37:10.129 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-27 17:37:15.333
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-27 17:37:17.265
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-27 18:42:48.570
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @3312c20; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @140ad2d2)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-27 18:42:48.577
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-27 18:42:48.577
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @3312c20; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @140ad2d2)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SESSION 2024-06-28 14:36:45.269 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-28 14:36:48.080
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-28 14:36:49.742
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-28 14:53:37.975 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-28 14:53:41.726
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-28 14:53:43.499
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 15:50:35.414
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Display.filters(int)" because "this.display" is null
+	at org.eclipse.swt.widgets.Widget.filters(Widget.java:831)
+	at org.eclipse.swt.widgets.Control.scrollWheel(Control.java:2568)
+	at org.eclipse.swt.widgets.Link.scrollWheel(Link.java:595)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6392)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2509)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6384)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5688)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5828)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 15:54:20.139
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 15:54:20.140
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 15:54:20.140
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 16:11:23.440
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 16:11:23.443
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 16:11:23.443
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 16:12:15.944
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 16:12:15.947
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 16:12:15.948
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 16:32:03.107
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 16:32:03.110
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 16:32:03.110
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:40:32.447
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Display.filters(int)" because "this.display" is null
+	at org.eclipse.swt.widgets.Widget.filters(Widget.java:831)
+	at org.eclipse.swt.widgets.Control.scrollWheel(Control.java:2568)
+	at org.eclipse.swt.widgets.Link.scrollWheel(Link.java:595)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6392)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2509)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6384)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5688)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5828)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 16:40:36.414
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 16:40:36.414
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 16:40:36.414
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @4bc2fa01; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2f09e87f)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SESSION 2024-06-28 16:50:32.819 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring -data file:/Users/anand/Documents/Linsoft/
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-28 16:50:38.411
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-28 16:50:41.750
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:21.155
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3180)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:383)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:184)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:21.156
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:21.715
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2219)
+	at org.eclipse.ui.NavigationLocation.getEditorPart(NavigationLocation.java:47)
+	at org.eclipse.ui.NavigationLocation.getText(NavigationLocation.java:57)
+	at org.eclipse.ui.internal.NavigationHistoryEntry.<init>(NavigationHistoryEntry.java:51)
+	at org.eclipse.ui.internal.NavigationHistory.createEntry(NavigationHistory.java:616)
+	at org.eclipse.ui.internal.NavigationHistory.addEntry(NavigationHistory.java:360)
+	at org.eclipse.ui.internal.NavigationHistory.lambda$0(NavigationHistory.java:209)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:21.716
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:24.111
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2219)
+	at org.eclipse.ui.NavigationLocation.getEditorPart(NavigationLocation.java:47)
+	at org.eclipse.ui.NavigationLocation.getText(NavigationLocation.java:57)
+	at org.eclipse.ui.internal.NavigationHistoryEntry.<init>(NavigationHistoryEntry.java:51)
+	at org.eclipse.ui.internal.NavigationHistory.createEntry(NavigationHistory.java:616)
+	at org.eclipse.ui.internal.NavigationHistory.addEntry(NavigationHistory.java:360)
+	at org.eclipse.ui.internal.NavigationHistory.lambda$0(NavigationHistory.java:209)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.observerProc(Display.java:3901)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5561)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5962)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1147)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2194)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1139)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2642)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2161)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6268)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2509)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6384)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5688)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5828)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:24.111
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:24.896
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2219)
+	at org.eclipse.ui.NavigationLocation.getEditorPart(NavigationLocation.java:47)
+	at org.eclipse.ui.texteditor.TextSelectionNavigationLocation.update(TextSelectionNavigationLocation.java:332)
+	at org.eclipse.ui.internal.NavigationHistory.updateEntry(NavigationHistory.java:449)
+	at org.eclipse.ui.internal.NavigationHistory.lambda$0(NavigationHistory.java:207)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:24.896
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:24.906
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2219)
+	at org.eclipse.ui.NavigationLocation.getEditorPart(NavigationLocation.java:47)
+	at org.eclipse.ui.texteditor.TextSelectionNavigationLocation.update(TextSelectionNavigationLocation.java:334)
+	at org.eclipse.ui.internal.NavigationHistory.updateEntry(NavigationHistory.java:449)
+	at org.eclipse.ui.internal.NavigationHistory.lambda$0(NavigationHistory.java:207)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:24.906
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:24.910
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2219)
+	at org.eclipse.ui.NavigationLocation.getEditorPart(NavigationLocation.java:47)
+	at org.eclipse.ui.NavigationLocation.getText(NavigationLocation.java:57)
+	at org.eclipse.ui.internal.NavigationHistoryEntry.getHistoryText(NavigationHistoryEntry.java:99)
+	at org.eclipse.ui.internal.NavigationHistoryAction.update(NavigationHistoryAction.java:254)
+	at org.eclipse.ui.internal.NavigationHistory.updateActions(NavigationHistory.java:414)
+	at org.eclipse.ui.internal.NavigationHistory.addEntry(NavigationHistory.java:370)
+	at org.eclipse.ui.internal.NavigationHistory.lambda$0(NavigationHistory.java:209)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3988)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:24.911
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 16:52:26.838
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.WorkbenchPage.checkEditor(WorkbenchPage.java:2277)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditors(WorkbenchPage.java:2231)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2219)
+	at org.eclipse.ui.NavigationLocation.getEditorPart(NavigationLocation.java:47)
+	at org.eclipse.ui.NavigationLocation.getText(NavigationLocation.java:57)
+	at org.eclipse.ui.internal.NavigationHistoryEntry.getHistoryText(NavigationHistoryEntry.java:99)
+	at org.eclipse.ui.internal.NavigationHistoryAction.update(NavigationHistoryAction.java:254)
+	at org.eclipse.ui.internal.NavigationHistory.updateActions(NavigationHistory.java:414)
+	at org.eclipse.ui.internal.NavigationHistory.addEntry(NavigationHistory.java:370)
+	at org.eclipse.ui.internal.NavigationHistory.lambda$0(NavigationHistory.java:209)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4365)
+	at org.eclipse.swt.widgets.Display.observerProc(Display.java:3901)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5561)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5962)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1147)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2194)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1139)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2642)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2161)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6268)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2509)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6384)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5688)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5828)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 16:52:26.839
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.ui 4 4 2024-06-28 17:00:29.337
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+	at org.eclipse.ui.internal.EditorReference.getEditorInput(EditorReference.java:302)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPart(CompatibilityEditor.java:62)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:342)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:938)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:385)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:311)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5247)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:168)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:187)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1391)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1341)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1352)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.close(StackRenderer.java:1217)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1982)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:338)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-06-28 17:00:29.338
+!MESSAGE Factory org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory returned null from createElement for editor id=org.eclipse.ui.DefaultTextEditor name=META-INF/MANIFEST.MF
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:02.276
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:02.692
+!MESSAGE Invalid ZIP archive: .classpath [in Project1]
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:3068)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:3002)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:256)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.computeChildren(JarPackageFragmentRoot.java:129)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.initializePackageNames(JavaProjectElementInfo.java:276)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.getProjectCache(JavaProjectElementInfo.java:244)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.newNameLookup(JavaProjectElementInfo.java:314)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2808)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:106)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:147)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:32)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:253)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:346)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:189)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:02.999
+!MESSAGE Invalid ZIP archive: .classpath [in Project1]
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:3068)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getZipFile(JavaModelManager.java:3002)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getJar(JarPackageFragmentRoot.java:256)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.computeChildren(JarPackageFragmentRoot.java:129)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.buildStructure(PackageFragmentRoot.java:165)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceModuleDescription(PackageFragmentRoot.java:908)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getModuleDescription(PackageFragmentRoot.java:901)
+	at org.eclipse.jdt.internal.core.JarPackageFragmentRoot.getModuleDescription(JarPackageFragmentRoot.java:313)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:127)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:147)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:32)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:253)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:346)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:189)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:742)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:808)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1311)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:04.904
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:04.911
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:05.420
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.ui 4 0 2024-06-28 17:16:06.392
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Display.filters(int)" because "this.display" is null
+	at org.eclipse.swt.widgets.Widget.filters(Widget.java:831)
+	at org.eclipse.swt.widgets.Control.scrollWheel(Control.java:2568)
+	at org.eclipse.swt.widgets.Link.scrollWheel(Link.java:595)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6392)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:236)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2264)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2509)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6384)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5688)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5828)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:09.277
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:09.279
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:09.784
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-06-28 17:16:17.065
+!MESSAGE Failed to index /Project1/.classpath
+!STACK 0
+java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1474)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1482)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1320)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1282)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:186)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJarFileToIndex.execute(AddJarFileToIndex.java:155)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:542)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 17:19:34.411
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5366bca8; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @464ef4b5)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 17:19:34.417
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 17:19:34.417
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5366bca8; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @464ef4b5)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-06-28 17:37:41.096
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5366bca8; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @464ef4b5)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-06-28 17:37:41.098
+!MESSAGE An unexpected problem occurred while evaluating the project setup proposals.
+!SUBENTRY 1 org.eclipse.jdt.ui 4 4 2024-06-28 17:37:41.098
+!MESSAGE Exception while processing classpath fix processors
+!STACK 0
+java.lang.IllegalAccessError: class org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal tried to access protected method 'org.eclipse.ltk.core.refactoring.Change org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore.createChange()' (org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5366bca8; org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposalCore is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @464ef4b5)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.AddModuleRequiresCorrectionProposal.createChange(AddModuleRequiresCorrectionProposal.java:42)
+	at org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal.getChange(ChangeCorrectionProposal.java:339)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.collectProposals(DefaultClasspathFixProcessor.java:219)
+	at org.eclipse.jdt.internal.ui.text.correction.DefaultClasspathFixProcessor.getFixImportProposals(DefaultClasspathFixProcessor.java:110)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor$1.run(ClasspathFixProcessorDescriptor.java:185)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.ClasspathFixProcessorDescriptor.getProposals(ClasspathFixProcessorDescriptor.java:180)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathFixSelectionDialog.lambda$0(ClasspathFixSelectionDialog.java:83)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.launching 4 150 2024-06-28 17:39:26.390
+!MESSAGE Unable to restore classpath entry.
+!STACK 0
+org.xml.sax.SAXException: FWK005 parse may not be called while parsing.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:277)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.jdt.launching.JavaRuntime.newRuntimeClasspathEntry(JavaRuntime.java:835)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.recoverRuntimePath(StandardClasspathProvider.java:120)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.computeUnresolvedClasspath(StandardClasspathProvider.java:78)
+	at org.eclipse.jdt.launching.JavaRuntime.computeUnresolvedRuntimeClasspath(JavaRuntime.java:1651)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspathAndModulepath(AbstractJavaLaunchConfigurationDelegate.java:463)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:132)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-06-28 17:39:26.398
+!MESSAGE An internal error occurred during: "Launching Anand".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl.createDeferredElement(String, String)" because "this.fDeferredDocumentImpl" is null
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser.startElement(AbstractDOMParser.java:1079)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser.emptyElement(AbstractDOMParser.java:1150)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.emptyElement(XMLDTDValidator.java:752)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1387)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$ContentDriver.scanRootElementHook(XMLDocumentScannerImpl.java:1292)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3079)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:836)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.jdt.launching.JavaRuntime.newRuntimeClasspathEntry(JavaRuntime.java:835)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.recoverRuntimePath(StandardClasspathProvider.java:120)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.computeUnresolvedClasspath(StandardClasspathProvider.java:78)
+	at org.eclipse.jdt.launching.JavaRuntime.computeUnresolvedRuntimeClasspath(JavaRuntime.java:1651)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspath(AbstractJavaLaunchConfigurationDelegate.java:431)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:96)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-06-29 16:47:27.093 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-29 16:47:31.103
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-29 16:47:33.136
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-30 08:08:43.939 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 08:08:47.195
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 08:08:49.167
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-30 10:47:34.677 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 10:47:39.021
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 10:47:41.506
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-06-30 10:52:40.944 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 10:52:43.822
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 10:52:45.578
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2024-06-30 11:19:19.162
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Car {key=Liitm/programming/Assignments~Car;} [in [Working copy] Assignments.java [in iitm.programming [in src [in iitm]]]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:605)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.SourceType.getMethods(SourceType.java:498)
+	at org.eclipse.jdt.internal.corext.util.MethodOverrideTester.findOverriddenMethodInType(MethodOverrideTester.java:221)
+	at org.eclipse.jdt.internal.corext.util.MethodOverrideTester.findOverriddenMethodInHierarchy(MethodOverrideTester.java:167)
+	at org.eclipse.jdt.internal.corext.util.MethodOverrideTester.findOverriddenMethod(MethodOverrideTester.java:142)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementSuperImplementationHyperlink.findSuperImplementation(JavaElementSuperImplementationHyperlink.java:110)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkSuperImplementationDetector.isOverriddenMethod(JavaElementHyperlinkSuperImplementationDetector.java:59)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkSuperImplementationDetector.addHyperlinks(JavaElementHyperlinkSuperImplementationDetector.java:44)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinksCached(JavaElementHyperlinkDetector.java:141)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.lambda$0(JavaElementHyperlinkDetector.java:85)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5839)
+	at org.eclipse.jdt.internal.core.JavaModelManager.callReadOnly(JavaModelManager.java:5828)
+	at org.eclipse.jdt.core.JavaCore.callReadOnly(JavaCore.java:6126)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:85)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4643)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1325)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3986)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-06-30 11:19:19.163
+!MESSAGE Car {key=Liitm/programming/Assignments~Car;} [in [Working copy] Assignments.java [in iitm.programming [in src [in iitm]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2024-06-30 11:44:15.178
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.getChar(AbstractDocument.java:774)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getChar(SynchronizableDocument.java:141)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:491)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:436)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:398)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-06-30 16:57:30.272 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 16:57:33.766
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 16:57:35.586
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2023-01-01 05:31:19.759 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:23.631
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:25.826
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-04 13:35:25.981 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-04 13:35:29.924
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-04 13:35:32.050
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-04 16:52:56.266 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-04 16:52:59.090
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-04 16:53:00.780
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2023-01-01 05:31:16.401 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:22.498
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:24.613
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-11 17:23:14.989 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-11 17:23:18.151
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-11 17:23:20.179
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-24 18:38:52.475 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-24 18:38:56.001
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-24 18:38:57.810
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2023-01-01 05:31:24.680 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:30.246
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:33.897
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-26 18:14:35.612 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-26 18:14:42.285
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-26 18:14:45.381
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-27 17:22:45.758 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-27 17:22:48.952
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-27 17:22:51.229
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-27 17:42:11.952 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-27 17:42:15.645
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-27 17:42:17.579
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2023-01-01 05:31:15.603 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:20.853
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:31:24.327
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2023-01-01 05:32:17.769 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:32:26.268
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-01 05:32:30.064
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-07-27 23:42:59.876 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=18.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/anand/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-27 23:43:03.490
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-27 23:43:05.924
+!MESSAGE Logback config file: /Users/anand/Documents/Linsoft/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
