@@ -9,4 +9,13 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="matrix.Matrix"/>
     <fullyQualifiedTypeName name="oper_matrix.Oper_Matrix"/>
+    <fullyQualifiedTypeName name="person.Person"/>
+    <fullyQualifiedTypeName name="deductions.Deductions"/>
+    <fullyQualifiedTypeName name="op2nosAdapter.Op2nosAdapter"/>
+    <fullyQualifiedTypeName name="shape.Shape.Rectangle"/>
+    <fullyQualifiedTypeName name="java.util.ListIterator"/>
+    <fullyQualifiedTypeName name="java.awt.event.WindowListener"/>
+    <fullyQualifiedTypeName name="java.awt.Event"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>
