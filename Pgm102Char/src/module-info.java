@@ -1,0 +1,2 @@
+module Pgm102Char {
+}

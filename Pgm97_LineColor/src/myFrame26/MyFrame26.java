@@ -28,6 +28,7 @@ public class MyFrame26 extends Frame {
 		p3.setBounds(450,300,50,200);
 		m=new MyMouse(this);
 		p1.addMouseMotionListener(m);
+		p1.addMouseListener(m);
 		
 		cbg1=new CheckboxGroup();
 		cbg2=new CheckboxGroup();
